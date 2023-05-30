@@ -9,8 +9,6 @@ builder.Services.AddDbContext<PataAmigaDbContext>(options =>
     options.UseSqlServer(builder.Configuration
     .GetConnectionString("PataAmigaConnectionString")));
 
-//Add-Migration "Nome da Migracao" no Packege Maneger Console pra criar a Migracao
-//depois --> Update-Database 
 
 var app = builder.Build();
 
